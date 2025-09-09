@@ -7,7 +7,7 @@ export default function RootLayout({ children }) {
   return (
       <html lang="en">
       <body>
-        <Signin/>
+        <SignIn/>
         {children}
       </body>
     </html>
