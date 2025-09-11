@@ -1,6 +1,8 @@
-
+import Form from "@/component/Form";
 export default function Home() {
   return (
-<div></div>
-  );
+<div>
+  <Form/>
+</div>
+);
 }
