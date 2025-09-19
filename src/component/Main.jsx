@@ -22,8 +22,8 @@ const Main = () => {
 
   const handleEdit = (index) => {
     setEditIndex(index);
-    setFormData(todo[index]); 
-    setshowModal(true); 
+    setFormData(todo[index]);
+    setshowModal(true);
   };
 
   const handleInputChange = (e) => {
@@ -69,7 +69,7 @@ const Main = () => {
           alt="not found"
         />
         <button
-          className="font-normal mb-3 text-[14px] h-[50px] w-[199px] cursor-pointer text-white rounded-[4px] bg-amber-500"
+          className="font-normal mb-3 text-[14px] h-[50px] w-[199px] cursor-pointer hover: text-white rounded-[4px] bg-amber-500"
           onClick={() => {
             setEditIndex(null);
             setFormData({
@@ -93,7 +93,7 @@ const Main = () => {
         <p className="font-semibold text-[12px] text-gray-400">Enroll Number</p>
         <p className="font-semibold text-[12px] text-gray-400"> Date of admission</p>
       </div>
-<div className="mt-5">
+      <div className="mt-5">
         <ul>
           {todo?.map((student, i) => (
             <li
@@ -102,9 +102,9 @@ const Main = () => {
             >
               <Image
                 className="w-[65px] h-[55px] rounded-[8px]"
-    src="/images/photo.svg"
-   height={50}
-    width={50}
+                src="/images/photo.svg"
+                height={50}
+                width={50}
                 alt=""
               />
               <div className="font-semibold ml-10 text-[12px]">
