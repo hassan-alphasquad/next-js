@@ -3,7 +3,7 @@
 const nextConfig = {
   experimental: {
     turbopack: {
-      root: __dirname, 
+      root: __dirname, // ensures current folder is treated as root
     },
   },
 };
