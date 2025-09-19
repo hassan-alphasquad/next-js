@@ -1,14 +1,16 @@
 import Sidebar from "@/component/Sidebar";
 import Header from "@/component/Header";
 import Content from "@/component/Content";
-const Dashboard = async () =>{
+const dashboard = async () =>{
     return (
-  <div>
-    <Sidebar />
-   <Header />
+  <div className="flex overflow-y-hidden">
+  <Sidebar/>
+    <div id="right side" className=" w-screen">
+      <Header/>
    <Content/>
+    </div>
   </div>
     )
 };
 
-export default Dashboard
+export default dashboard
