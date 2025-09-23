@@ -3,7 +3,7 @@
 const nextConfig = {
   experimental: {
     turbopack: {
-      root: __dirname, // ensures current folder is treated as root
+      root: __dirname, 
     },
   },
 };
@@ -15,3 +15,4 @@ module.exports = {
     root: path.join(__dirname, '..'),
   },
 }
+
