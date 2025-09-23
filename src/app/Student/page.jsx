@@ -2,7 +2,7 @@ import React from 'react'
 import Sidebar2 from '@/component/Sidebar2'
 import Header from '@/component/Header'
 import Main from '@/component/Main'
-const student = () => {
+const page = () => {
   return (
     
   <div className="flex overflow-y-hidden">
@@ -16,5 +16,5 @@ const student = () => {
   )
 }
 
-export default student
+export default page
 

@@ -1,7 +1,7 @@
 import Sidebar from "@/component/Sidebar";
 import Header from "@/component/Header";
 import Content from "@/component/Content";
-const dashboard = async () =>{
+const page = async () =>{
     return (
   <div className="flex overflow-y-hidden">
   <Sidebar/>
@@ -13,4 +13,4 @@ const dashboard = async () =>{
     )
 };
 
-export default dashboard
+export default page
