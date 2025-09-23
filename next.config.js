@@ -1,18 +1,12 @@
-
-/** @type {import('next').NextConfig} */
 const nextConfig = {
+  outputFileTracingRoot: __dirname,
   experimental: {
     turbopack: {
-      root: __dirname, 
+      root: __dirname, // same value
     },
   },
 };
 
 module.exports = nextConfig;
-const path = require('path')
-module.exports = {
-  turbopack: {
-    root: path.join(__dirname, '..'),
-  },
-}
+
 
