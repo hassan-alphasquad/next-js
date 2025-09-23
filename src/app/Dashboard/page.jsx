@@ -1,7 +1,7 @@
 import Sidebar from "@/component/Sidebar";
 import Header from "@/component/Header";
 import Content from "@/component/Content";
-const page = async () =>{
+const page = () =>{
     return (
   <div className="flex overflow-y-hidden">
   <Sidebar/>
