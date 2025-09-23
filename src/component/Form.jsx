@@ -22,7 +22,7 @@ const Form = () => {
     setpassword('');
 
 
-    router.push('/Dashboard');
+    router.push('/dashboard');
 
   }
   return (
