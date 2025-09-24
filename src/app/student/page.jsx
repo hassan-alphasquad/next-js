@@ -5,7 +5,7 @@ import Main from '@/component/Main'
 const page = () => {
   return (
     
-  <div className="flex overflow-y-hidden">
+  <div className="flex max-h-dvh ">
   <Sidebar2 />
     <div id="right side" className=" w-screen">
       <Header/>

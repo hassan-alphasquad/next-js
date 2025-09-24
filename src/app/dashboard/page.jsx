@@ -3,8 +3,8 @@ import Header from "@/component/Header";
 import Content from "@/component/Content";
 const page = () =>{
     return (
-  <div className="flex overflow-y-hidden">
-  <Sidebar/>
+  <div className="flex max-h-dvh">
+  <Sidebar />
     <div id="right side" className=" w-screen">
       <Header/>
    <Content/>

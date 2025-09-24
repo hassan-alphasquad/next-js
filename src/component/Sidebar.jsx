@@ -3,17 +3,19 @@ import Link from "next/link";
 
 const Sidebar = () => {
   return (
-    <div>
-      <div id="sidebar" className="bg-[rgba(242,234,225,1)] text-center w-[270px]">
-        <div className='flex h-7 w-[0px] mt-[-22] relative text-center top-[41px] ml-[60PX] border-3 border-amber-300 bg-yellow-400  sm:h-6 sm:ml-[31px]'></div>
-        <h1 className='ml-[19px] mt-[11px] text-xl font-extrabold leading-[100%] sm:text-[19px] sm:mt-[20px]'> CRUD OPERATIONS </h1>
-        <div className="flex flex-col mx-auto mt-[65px] w-[140px] h-[196px] cursor-pointer">
-          <Image className="w-[130px] h-[128px] ml-[6px] rounded-full mt-[1px]" src="/images/photo.svg" width={50} height={50} alt="image not found" />
+         <div className='flex flex-col bg-[rgba(242,234,225,1)] justify-between w-[330px] min-h-dvh'>
+            <div className='flex flex-row h-15'>
+  <div className='h-7 w-[0px] mt-[-22] relative text-center top-[41px] ml-[30px] border-3 border-amber-300 bg-yellow-400'>
+  </div>
+    <h1 className='ml-[12px] mt-[20px] text-xl font-extrabold leading-[100%]'> CRUD OPERATIONS </h1>
+            </div>
+            <div className='flex flex-col mx-auto text-center mt-[65px] w-[140px] h-[196px] cursor-pointer'>
+   <Image className="w-[130px] h-[128px] ml-[6px] rounded-full mt-[1px]" src="/images/photo.svg" width={50} height={50} alt="image not found" />
           <h2 className="text-[17px] font-bold mt-4">Hassan Ali</h2>
           <p className=" text-[15px] cursor-pointer text-yellow-400 mt-1"> Admin </p>
-        </div>
-        <ul className="flex flex-col mx-auto mt-[120px] w-[193px] h-[497px] bg-amber-60">
-          <li className="flex items-center gap-2 px-11 py-4 bg-yellow-500 rounded-md h-11 cursor-pointer">
+            </div>
+            <div className='flex flex-col mx-auto mt-[120px] w-[193px] h-[497px] bg-amber-60'>
+ <li className="flex items-center gap-2 px-11 py-4 bg-yellow-500 rounded-md h-11 cursor-pointer">
             <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clipPath="url(#clip0_17_24)">
                 <path d="M18.9171 7.30102L10.2457 0.264952C10.035 0.0927557 9.77185 -0.00123024 9.50042 -0.00123024C9.229 -0.00123024 8.96583 0.0927557 8.7551 0.264952L0.0837115 7.30102C0.060804 7.31944 0.0417585 7.34225 0.0276807 7.36813C0.0136029 7.39401 0.00477327 7.42245 0.00170444 7.4518C-0.00136439 7.48114 0.00138873 7.51081 0.00980395 7.53908C0.0182192 7.56734 0.0321288 7.59364 0.0507254 7.61645L0.519128 8.19751C0.537742 8.22064 0.560703 8.23984 0.586698 8.25403C0.612693 8.26822 0.641212 8.27711 0.670623 8.28019C0.700034 8.28328 0.729761 8.28049 0.758103 8.272C0.786444 8.26351 0.812845 8.24948 0.835795 8.23071L2.11137 7.19511V16.4681C2.11137 16.609 2.16697 16.7441 2.26595 16.8437C2.36493 16.9434 2.49917 16.9993 2.63915 16.9993H16.3614C16.5013 16.9993 16.6356 16.9434 16.7346 16.8437C16.8335 16.7441 16.8891 16.609 16.8891 16.4681V7.19843L18.169 8.23735C18.2154 8.27518 18.2748 8.29292 18.3342 8.2867C18.3935 8.28047 18.448 8.25078 18.4857 8.20415L18.9538 7.6231C18.9894 7.57477 19.0055 7.51459 18.9987 7.45478C18.9919 7.39496 18.9627 7.33999 18.9171 7.30102ZM7.91692 15.9368V10.6243H11.0836V15.9368H7.91692ZM15.8336 15.9368H12.1391V10.0931C12.1391 9.95218 12.0835 9.81705 11.9846 9.71743C11.8856 9.6178 11.7513 9.56183 11.6114 9.56183H7.38915C7.24917 9.56183 7.11493 9.6178 7.01595 9.71743C6.91697 9.81705 6.86137 9.95218 6.86137 10.0931V15.9368H3.16692V6.33847L9.35875 1.31151C9.39783 1.27931 9.44678 1.26171 9.49729 1.26171C9.5478 1.26171 9.59675 1.27931 9.63583 1.31151L15.8336 6.34112V15.9368Z" fill="black" />
@@ -63,19 +65,17 @@ const Sidebar = () => {
             </svg>
             <span className="font-normal text-[14px] ml-3"> Settings </span>
           </li>
-
-          <li className="flex flex-row-reverse px-13 py-35 cursor-pointer">
+          <ul/>
+            </div>
+            <div className='h-20 flex justify-center items-center flex-row-reverse cursor-pointer'>
             <svg className=" mt-1 ml-3" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5.3125 7.2084C5.3125 6.91621 5.55156 6.67715 5.84375 6.67715H10.625V3.55937C10.625 3.32363 10.9105 3.2041 11.0766 3.37012L15.7781 8.12148C15.9873 8.33066 15.9873 8.66602 15.7781 8.8752L11.0766 13.6266C10.9105 13.7926 10.625 13.6764 10.625 13.4373V10.3195H5.84375C5.55156 10.3195 5.3125 10.0805 5.3125 9.78828V7.2084ZM4.25 7.2084V9.78828C4.25 10.6682 4.96387 11.382 5.84375 11.382H9.5625V13.4373C9.5625 14.616 10.9902 15.2137 11.827 14.377L16.5318 9.62891C17.1561 9.00469 17.1561 7.99531 16.5318 7.37109L11.827 2.61973C10.9936 1.78633 9.5625 2.37734 9.5625 3.55937V5.61465H5.84375C4.96387 5.61465 4.25 6.33184 4.25 7.2084ZM0 3.71875V13.2812C0 14.1611 0.713867 14.875 1.59375 14.875H5.97656C6.1957 14.875 6.375 14.6957 6.375 14.4766V14.2109C6.375 13.9918 6.1957 13.8125 5.97656 13.8125H1.59375C1.30156 13.8125 1.0625 13.5734 1.0625 13.2812V3.71875C1.0625 3.42656 1.30156 3.1875 1.59375 3.1875H5.97656C6.1957 3.1875 6.375 3.0082 6.375 2.78906V2.52344C6.375 2.3043 6.1957 2.125 5.97656 2.125H1.59375C0.713867 2.125 0 2.83887 0 3.71875Z" fill="black" />
             </svg>
             <span className="font-semibold"> Logout </span>
-          </li>
-
-        </ul>
-      </div>
-    </div>
-
-  )
+           
+            </div>
+    </div> 
+     )
 }
 
 export default Sidebar

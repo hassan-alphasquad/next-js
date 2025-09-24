@@ -5,7 +5,7 @@ import Payment from '@/component/Payment'
 const page = () => {
   return (
     <div>
-        <div className="flex overflow-y-hidden">
+        <div className="flex max-h-dvh">
   <Sidebar3/>
     <div id="right side" className=" w-screen">
       <Header/>
