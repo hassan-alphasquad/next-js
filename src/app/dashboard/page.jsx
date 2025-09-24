@@ -4,7 +4,7 @@ import Content from "@/component/Content";
 const page = () =>{
     return (
   <div className="flex overflow-y-hidden">
-  <Sidebar />
+  <Sidebar/>
     <div id="right side" className=" w-screen">
       <Header/>
    <Content/>

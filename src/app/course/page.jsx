@@ -6,7 +6,7 @@ const page = () => {
   return (
     <div>
         <div className="flex overflow-y-hidden">
-  <Sidebar3 />
+  <Sidebar3/>
     <div id="right side" className=" w-screen">
       <Header/>
       <Payment/>

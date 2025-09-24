@@ -9,7 +9,7 @@ const Sidebar = () => {
         <h1 className='ml-[19px] mt-[11px] text-xl font-extrabold leading-[100%] sm:text-[19px] sm:mt-[20px]'> CRUD OPERATIONS </h1>
         <div className="flex flex-col mx-auto mt-[65px] w-[140px] h-[196px] cursor-pointer">
           <Image className="w-[130px] h-[128px] ml-[6px] rounded-full mt-[1px]" src="/images/photo.svg" width={50} height={50} alt="image not found" />
-          <h2 className="text-[17px] font-bold mt-4"> Hassan Ali </h2>
+          <h2 className="text-[17px] font-bold mt-4">Hassan Ali</h2>
           <p className=" text-[15px] cursor-pointer text-yellow-400 mt-1"> Admin </p>
         </div>
         <ul className="flex flex-col mx-auto mt-[120px] w-[193px] h-[497px] bg-amber-60">
