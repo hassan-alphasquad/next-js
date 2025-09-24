@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Sidebar2 = () => {
   return (
-    <div className='flex flex-col bg-[rgba(242,234,225,1)] justify-between w-[330px] min-h-dvh'>
+    <div className='flex flex-col bg-[rgba(242,234,225,1)] justify-between w-[330px] h-dvh'>
             <div className='flex flex-row h-15'>
   <div className='h-7 w-[0px] mt-[-22] relative text-center top-[41px] ml-[30px] border-3 border-amber-300 bg-yellow-400'>
   </div>
