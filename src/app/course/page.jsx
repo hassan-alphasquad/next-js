@@ -5,13 +5,13 @@ import Payment from '@/component/Payment'
 const page = () => {
   return (
     <div>
-        <div className="flex h-dvh">
-  <Sidebar3/>
-    <div id="right side" className=" w-screen">
-      <Header/>
-      <Payment/>
-    </div>
-  </div>
+      <div className="flex h-dvh">
+        <Sidebar3 />
+        <div id="right side" className=" w-screen">
+          <Header />
+          <Payment />
+        </div>
+      </div>
 
     </div>
   )

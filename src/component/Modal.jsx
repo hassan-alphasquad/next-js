@@ -59,17 +59,17 @@ const Main = () => {
 
   return (
     <div>
-      <div className="flex items-center mt-5 w-394 hover:border-b-2 ml-8 h-13">
-        <h2 className="font-bold text-[20px] mr-2 mb-3">Students List</h2>
+      <div className="flex items-center mt-5 hover:border-b-2 ml-8 h-13">
+        <h2 className="font-bold text-2xl mr-2 mb-3">Students List</h2>
         <Image
-          className="p-4 ml-295 mb-3"
+          className="p-4 ml-auto mb-3"
           src="/icons/arrow.svg"
           width={50}
           height={50}
           alt="not found"
         />
         <button
-          className="font-normal mb-3 text-[14px] h-[50px] w-[199px] cursor-pointer hover: text-white rounded-[4px] bg-amber-500"
+          className="font-normal mb-3 mr-5 text-md h-12 w-48 cursor-pointer hover: text-white rounded-md bg-amber-500"
           onClick={() => {
             setEditIndex(null);
             setFormData({
@@ -86,40 +86,40 @@ const Main = () => {
         </button>
       </div>
 
-      <div className="flex justify-between items-center xl:w-[1300] h-[15px] w-[1300px] mt-6 ml-32">
-        <p className="font-semibold text-[12px] text-gray-400"> Name </p>
-        <p className="font-semibold text-[12px] text-gray-400"> Email </p>
-        <p className="font-semibold text-[12px] text-gray-400"> Phone </p>
-        <p className="font-semibold text-[12px] text-gray-400"> Enroll Number </p>
-        <p className="font-semibold text-[12px] text-gray-400"> Date of admission </p>
+      <div className="flex justify-evenly items-center h-3.5 mt-6 ">
+        <p className="font-semibold text-sm text-gray-400"> Name </p>
+        <p className="font-semibold text-sm text-gray-400"> Email </p>
+        <p className="font-semibold text-sm text-gray-400"> Phone </p>
+        <p className="font-semibold text-sm text-gray-400"> Enroll Number </p>
+        <p className="font-semibold text-sm text-gray-400"> Date of admission </p>
       </div>
-      <div className="mt-5  xl:">
+      <div className="mt-5">
         <ul>
           {todo?.map((student, i) => (
             <li
               key={i}
-              className="flex items-center h-[85px] w-[1590px] mt-5 ml-5"
+              className="flex items-center justify-between h-20 mt-5 ml-5"
             >
               <Image
-                className="w-[65px] h-[55px] rounded-[8px]"
+                className="w-16 h-14 rounded-[8px]"
                 src="/images/photo.svg"
                 height={50}
                 width={50}
                 alt=""
               />
-              <div className="font-semibold ml-10 text-[12px]">
+              <div className="font-semibold text-sm">
                 {student.name}
               </div>
-              <div className="font-semibold ml-56 text-[12px]">
+              <div className="font-semibold text-sm">
                 {student.email}
               </div>
-              <div className="font-semibold ml-40 text-[12px]">
+              <div className="font-semibold  text-sm">
                 {student.phone}
               </div>
-              <div className="font-semibold ml-58 text-[12px]">
+              <div className="font-semibold text-sm">
                 {student.enroll}
               </div>
-              <div className="font-semibold ml-58 text-[12px]">
+              <div className="font-semibold text-sm">
                 {student.date}
               </div>
               <div className="flex ml-27">
@@ -151,22 +151,23 @@ const Main = () => {
           id="wrapper"
           onClick={handleClose}
         >
-          <div className="w-[600px] justify-center flex flex-col">
+          <div className="w-xl justify-center flex flex-col">
 
-            <div className="bg-zinc-500 rounded-lg text-black p-2">
-              <h2 className="flex justify-between text-lg  font-bold">{editIndex !== null ? "Edit Student" : "Add Student"}
+            <div className="bg-white rounded-lg text-black p-2">
+              <h2 className="flex ml-5 justify-between text-xl  font-bold">{editIndex !== null ? "Edit Student" : "Add Student"}
 
-            <button
-              className="text-white text-xl bg-black px-2 rounded-sm"
-              onClick={() => setshowModal(false)}
-              >
-              x
-            </button>
+                <button
+                  className="text-white text-xl bg-black px-2 rounded-sm"
+                  onClick={() => setshowModal(false)}
+                >
+                  x
+                </button>
               </h2>
-
+              <p className="ml-5 text-gray-500">Automatically generate a form from a Zod schema.</p>
               <form onSubmit={handleSubmit}>
+                <p className="ml-6 mt-10 mb-2 font-semibold text-gray-700">Username</p>
                 <input
-                  className="flex mx-auto h-11 w-96 outline-0 mt-10 bg-gray-300 p-3 border border-gray-300 rounded-lg placeholder:text-gray-400"
+                  className="flex mx-auto h-11 w-lg outline-0 p-3 border border-gray-200 rounded-lg placeholder:text-gray-400"
                   type="text"
                   name="name"
                   placeholder="Enter your Name"
@@ -174,9 +175,9 @@ const Main = () => {
                   onChange={handleInputChange}
                   required
                 />
-
+                <p className="ml-7 mt-6 mb-2 font-semibold text-gray-700">Email</p>
                 <input
-                  className="flex mx-auto h-11 w-96 outline-0 mt-6 bg-gray-300 p-3 border border-gray-300 rounded-lg placeholder:text-gray-400"
+                  className="flex mx-auto h-11 w-lg outline-0 p-3 border border-gray-200 rounded-lg placeholder:text-gray-400"
                   type="email"
                   name="email"
                   placeholder="Enter your Email"
@@ -184,9 +185,9 @@ const Main = () => {
                   onChange={handleInputChange}
                   required
                 />
-
+                <p className="ml-7 mt-6 mb-2 font-semibold text-gray-700">Phone</p>
                 <input
-                  className="flex mx-auto h-11 w-96 outline-0 mt-6 bg-gray-300 p-3 border border-gray-300 rounded-lg placeholder:text-gray-400"
+                  className="flex mx-auto h-11 w-lg outline-0 p-3 border border-gray-200 rounded-lg placeholder:text-gray-400"
                   type="tel"
                   name="phone"
                   placeholder="Enter your Phone"
@@ -194,9 +195,9 @@ const Main = () => {
                   onChange={handleInputChange}
                   required
                 />
-
+                <p className="ml-7 mt-6 mb-2 font-semibold text-gray-700">Enroll</p>
                 <input
-                  className="flex mx-auto h-11 w-96 outline-0 mt-6 bg-gray-300 p-3 border border-gray-300 rounded-lg placeholder:text-gray-400"
+                  className="flex mx-auto h-11 w-lg outline-0 p-3 border border-gray-200 rounded-lg placeholder:text-gray-400"
                   type="text"
                   name="enroll"
                   placeholder="Enter your Enroll Number"
@@ -204,9 +205,9 @@ const Main = () => {
                   onChange={handleInputChange}
                   required
                 />
-
+                <p className="ml-7 mt-6 mb-2 font-semibold text-gray-700">Date</p>
                 <input
-                  className="flex mx-auto h-11 w-96 outline-0 mt-6 text-gray-400 bg-gray-300 p-3 border border-gray-300 rounded-lg placeholder:text-gray-400"
+                  className="flex mx-auto h-11 w-lg outline-0 text-gray-400 p-3 border border-gray-200 rounded-lg placeholder:text-gray-400"
                   type="date"
                   name="date"
                   value={FormData.date}
@@ -215,7 +216,7 @@ const Main = () => {
                 />
 
                 <button
-                  className="font-normal mb-3 ml-25 mt-5 text-[14px] h-11 w-96 cursor-pointer text-white rounded-lg bg-amber-500"
+                  className="font-normal mb-3 ml-25 mt-5 text-sm h-11 w-96 cursor-pointer text-white rounded-lg bg-amber-500"
                   type="submit"
                 > {editIndex !== null ? "SAVE CHANGES" : "ADD NEW STUDENT"}</button>
               </form>
