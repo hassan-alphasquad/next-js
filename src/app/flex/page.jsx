@@ -1,8 +1,9 @@
 import React from 'react'
-import Image from "next/image";
-import Link from 'next/link';
-const Sidebar3 = () => {
-    return (
+import Image from 'next/image'
+import Link from 'next/link'
+const page = () => {
+  return (
+    <div>
         <div className='flex flex-4 flex-col w-3xs bg-[rgba(242,234,225,1)] h-screen'>
        <div id='heading' className='col-span-1 flex flex-row h-15'>
   <div className='h-7 mt-5 text-center ml-3.5 border-3 border-amber-300 bg-yellow-400'>
@@ -60,7 +61,8 @@ const Sidebar3 = () => {
         <span className="font-semibold"> Logout </span>
        </div>
        </div>
-    )
+    </div>
+  )
 }
 
-export default Sidebar3
+export default page

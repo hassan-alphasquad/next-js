@@ -86,14 +86,14 @@ const Main = () => {
         </button>
       </div>
 
-      <div className="flex justify-between items-center h-[15px] w-[1300px] mt-6 ml-32">
+      <div className="flex justify-between items-center xl:w-[1300] h-[15px] w-[1300px] mt-6 ml-32">
         <p className="font-semibold text-[12px] text-gray-400"> Name </p>
         <p className="font-semibold text-[12px] text-gray-400"> Email </p>
         <p className="font-semibold text-[12px] text-gray-400"> Phone </p>
         <p className="font-semibold text-[12px] text-gray-400"> Enroll Number </p>
         <p className="font-semibold text-[12px] text-gray-400"> Date of admission </p>
       </div>
-      <div className="mt-5">
+      <div className="mt-5  xl:">
         <ul>
           {todo?.map((student, i) => (
             <li
@@ -147,24 +147,26 @@ const Main = () => {
 
       {showModal && (
         <div
-          className="fixed inset-0 bg-opacity-25 backdrop-blur-[5px] flex justify-center items-center"
+          className="fixed inset-0 bg-opacity-25 backdrop-brightness-50 flex justify-center items-center"
           id="wrapper"
           onClick={handleClose}
         >
           <div className="w-[600px] justify-center flex flex-col">
+
+            <div className="bg-zinc-500 rounded-lg text-black p-2">
+              <h2 className="flex justify-between text-lg  font-bold">{editIndex !== null ? "Edit Student" : "Add Student"}
+
             <button
-              className="text-black text-xl place-self-end bg-red-400 px-2 rounded-sm hover:bg-red-500"
+              className="text-white text-xl bg-black px-2 rounded-sm"
               onClick={() => setshowModal(false)}
-            >
+              >
               x
             </button>
-
-            <div className="bg-gray-300 rounded-lg text-black p-2">
-              <h2 className="text-lg font-bold">{editIndex !== null ? "Edit Student" : "Add Student"}</h2>
+              </h2>
 
               <form onSubmit={handleSubmit}>
                 <input
-                  className="flex mx-auto h-[40px] w-[316px] outline-0 placeholder:text-[11px] mt-5 bg-white p-3 border border-zinc-200 rounded-[4px] sm:h-[44px] sm:w-[415px] sm:placeholder:text-[10px]"
+                  className="flex mx-auto h-11 w-96 outline-0 mt-10 bg-gray-300 p-3 border border-gray-300 rounded-lg placeholder:text-gray-400"
                   type="text"
                   name="name"
                   placeholder="Enter your Name"
@@ -174,7 +176,7 @@ const Main = () => {
                 />
 
                 <input
-                  className="flex mx-auto h-[40px] w-[316px] outline-0 placeholder:text-[11px] mt-5 bg-white p-3 border border-zinc-200 rounded-[4px] sm:h-[44px] sm:w-[415px] sm:placeholder:text-[10px]"
+                  className="flex mx-auto h-11 w-96 outline-0 mt-6 bg-gray-300 p-3 border border-gray-300 rounded-lg placeholder:text-gray-400"
                   type="email"
                   name="email"
                   placeholder="Enter your Email"
@@ -184,7 +186,7 @@ const Main = () => {
                 />
 
                 <input
-                  className="flex mx-auto h-[40px] w-[316px] outline-0 placeholder:text-[11px] mt-5 bg-white p-3 border border-zinc-200 rounded-[4px] sm:h-[44px] sm:w-[415px] sm:placeholder:text-[10px]"
+                  className="flex mx-auto h-11 w-96 outline-0 mt-6 bg-gray-300 p-3 border border-gray-300 rounded-lg placeholder:text-gray-400"
                   type="tel"
                   name="phone"
                   placeholder="Enter your Phone"
@@ -194,7 +196,7 @@ const Main = () => {
                 />
 
                 <input
-                  className="flex mx-auto h-[40px] w-[316px] outline-0 placeholder:text-[11px] mt-5 bg-white p-3 border border-zinc-200 rounded-[4px] sm:h-[44px] sm:w-[415px] sm:placeholder:text-[10px]"
+                  className="flex mx-auto h-11 w-96 outline-0 mt-6 bg-gray-300 p-3 border border-gray-300 rounded-lg placeholder:text-gray-400"
                   type="text"
                   name="enroll"
                   placeholder="Enter your Enroll Number"
@@ -204,7 +206,7 @@ const Main = () => {
                 />
 
                 <input
-                  className="flex mx-auto h-[40px] w-[316px] outline-0 placeholder:text-[11px] mt-5 bg-white p-3 border border-zinc-200 rounded-[4px] sm:h-[44px] sm:w-[415px] sm:placeholder:text-[10px]"
+                  className="flex mx-auto h-11 w-96 outline-0 mt-6 text-gray-400 bg-gray-300 p-3 border border-gray-300 rounded-lg placeholder:text-gray-400"
                   type="date"
                   name="date"
                   value={FormData.date}
@@ -213,7 +215,7 @@ const Main = () => {
                 />
 
                 <button
-                  className="font-normal mb-3 ml-21 mt-5 text-[14px] h-[40px] w-[420px] cursor-pointer text-white rounded-[4px] bg-amber-500"
+                  className="font-normal mb-3 ml-25 mt-5 text-[14px] h-11 w-96 cursor-pointer text-white rounded-lg bg-amber-500"
                   type="submit"
                 > {editIndex !== null ? "SAVE CHANGES" : "ADD NEW STUDENT"}</button>
               </form>
