@@ -7,12 +7,12 @@ const Sidebar3 = () => {
       <div id='heading' className='col-span-1 flex flex-row h-15'>
         <div className='h-7 mt-5 text-center ml-3.5 border-3 border-amber-300 bg-yellow-400'>
         </div>
-        <h1 className='ml-3 mt-5 text-xl font-extrabold'> CRUD OPERATIONS </h1>
+        <h1 className='ml-3 mt-5 text-xl font-extrabold'>CRUD OPERATIONS</h1>
       </div>
       <div id='img' className='col-span-1 h-48 w-36  flex flex-col mx-auto text-center mt-10 cursor-pointer'>
         <Image className="w-32 h-32 ml-1.5 rounded-full mt-0.5" src="/images/photo.svg" width={50} height={50} alt="image not found" />
         <h2 className="text-xl font-bold mt-4">Hassan Ali</h2>
-        <p className=" text-lg cursor-pointer text-yellow-400 mt-1"> Admin </p>
+        <p className=" text-lg cursor-pointer text-yellow-400 mt-1">Admin</p>
       </div>
 
 
@@ -21,7 +21,7 @@ const Sidebar3 = () => {
         <li className="flex items-center gap-2 px-11 py-4  bg-yellow-500 rounded-md h-11 cursor-pointer">
           <Image src="/icons/student.svg" height={50} width={50} alt='' />
 
-          <Link href="/student" className="font-normal text-lg mx-1"> Student </Link>
+          <Link href="/student" className="font-normal text-lg mx-1">Student</Link>
         </li>
       </div>
       <div id='logout' className='col-span-1 mt-auto w-3xs h-20 flex justify-center items-center flex-row-reverse cursor-pointer'>

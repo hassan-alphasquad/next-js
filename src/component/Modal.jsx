@@ -87,11 +87,11 @@ const Main = () => {
       </div>
 
       <div className="flex justify-evenly items-center h-3.5 mt-6 ">
-        <p className="font-semibold text-sm text-gray-400"> Name </p>
-        <p className="font-semibold text-sm text-gray-400"> Email </p>
-        <p className="font-semibold text-sm text-gray-400"> Phone </p>
-        <p className="font-semibold text-sm text-gray-400"> Enroll Number </p>
-        <p className="font-semibold text-sm text-gray-400"> Date of admission </p>
+        <p className="font-semibold text-sm text-gray-400">Name </p>
+        <p className="font-semibold text-sm text-gray-400">Email </p>
+        <p className="font-semibold text-sm text-gray-400">Phone </p>
+        <p className="font-semibold text-sm text-gray-400">Enroll Number </p>
+        <p className="font-semibold text-sm text-gray-400">Date of admission </p>
       </div>
       <div className="mt-5">
         <ul>
